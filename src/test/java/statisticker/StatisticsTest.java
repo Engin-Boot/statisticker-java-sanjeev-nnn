@@ -36,6 +36,6 @@ public class StatisticsTest
         //All fields of computedStats (average, max, min) must be
         //Float.NaN (not-a-number), as described in
         //https://www.geeksforgeeks.org/nan-not-number-java/
-        //Design the asserts here and implement accordingly.
+        //Design the asserts here and implement accordingly
     }
 }
