@@ -19,6 +19,7 @@ public class Statistics
     		float average=0;
         	float min=Collections.min(numbers);
         	float max=Collections.max(numbers);
+		Float sum = 0f
         	for (Float n:numbers)
                 {
                 sum+=n;
