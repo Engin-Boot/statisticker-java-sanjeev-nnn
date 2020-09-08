@@ -4,20 +4,18 @@ import java.util.*;
 
 public class Statistics 
 {
-        static class Stats{
-        public Float min=Float.NaN;
-        public Float max=Float.NaN;
-        public Float average=Float.NaN;
+        public static class Stats{
+        Float min=Float.NaN;
+        Float max=Float.NaN;
+        Float average=Float.NaN;
+                
     }
     
     public static Stats getStatistics(List<Float> numbers) {
         
-        Statistics.Stats s = new Stats();
-        if(numbers.isEmpty())
+        Stats s = new Stats();
+        if(!numbers.isEmpty())
         {
-            return s;
-        }
-        
         Float sum = 0.0f;
         s.min = Collections.min(numbers);
     	s.max = Collections.max(numbers);
@@ -28,4 +26,5 @@ public class Statistics
         s.average = sum/numbers.size();
         return s;
     }
+            return s;
 }
