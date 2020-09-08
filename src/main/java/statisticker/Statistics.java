@@ -12,20 +12,20 @@ public class Statistics
     
     public static Stats getStatistics(List<Float> numbers) {
         
-        Statistics.Stats stats = new Stats();
+        Statistics.Stats s = new Stats();
         if(numbers.isEmpty())
         {
-            return stats;
+            return s;
         }
         
         Float sum = 0.0f;
-        stats.min = Collections.min(numbers);
-    	stats.max = Collections.max(numbers);
+        s.min = Collections.min(numbers);
+    	s.max = Collections.max(numbers);
          for (Float n:numbers)
         {
             sum += n;
         }
-        stats.average = sum/numbers.size();
-        return stats;
+        s.average = sum/numbers.size();
+        return s;
     }
 }
